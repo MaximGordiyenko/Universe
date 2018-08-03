@@ -1,0 +1,33 @@
+.cursor {
+    position: relative;
+    top: 240px;
+    left: 400px;
+    width: 0;
+    height: 0;
+    transform: rotate(250deg);
+    border-left: 10px solid #004189;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid #003978;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        right: -10px;
+        bottom: -20px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid #003978;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+}

@@ -7,8 +7,8 @@
   background: linear-gradient(60deg, #f09032, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   border-radius: calc(4 * 50%);
   z-index: -1;
-  animation: change-gradient 10s ease alternate-reverse infinite;
   background-size: 300% 300%;
+  animation: change-gradient 10s ease alternate-reverse infinite;
 }
 @keyframes change-gradient {
   0% {
@@ -35,13 +35,43 @@
 }
 .inner-circle:after {
   content: '';
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   z-index: -3;
   position: absolute;
-  top: calc(50% - 100px);
-  left: calc(50% - 100px);
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+  display: block;
+  border: 2px solid #001b38;
+}
+.uranus {
+  position: absolute;
+  top: calc(50% - 42px);
+  left: calc(50% - 260px);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: -3;
   background: linear-gradient(60deg, #691a07, #581869, #114367, #1d693c, #5073b8, #1098ad, #07b39b, #6fba82);
+  animation: uranus-move 45s ease-out alternate infinite;
+}
+@keyframes uranus-move {
+  0% {
+    top: 800px;
+    left: 5px;
+  }
+  30% {
+    top: 500px;
+    left: 200px;
+  }
+  60% {
+    top: 235px;
+    left: 520px;
+  }
+  100% {
+    top: 50px;
+    left: 820px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
