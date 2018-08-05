@@ -1,4 +1,4 @@
-.inner-circle {
+.circle {
   position: absolute;
   top: calc(50% - 200px);
   left: calc(50% - 200px);
@@ -21,30 +21,31 @@
     background-position: 0 50%;
   }
 }
-.inner-circle:before {
-  content: '';
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  z-index: -3;
-  position: absolute;
-  top: calc(50% - 175px);
-  left: calc(50% - 175px);
-  display: block;
-  border: 2px solid #001b38;
-  box-shadow: 0 0 30px 15px #001b38;
-}
-.inner-circle:after {
+.circle:before {
   content: '';
   width: 300px;
   height: 300px;
   border-radius: 50%;
   z-index: -3;
   position: absolute;
-  top: calc(50% - 175px);
-  left: calc(50% - 175px);
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
   display: block;
-  border: 2px solid #001b38;
+  border: 1px solid #001b38;
+  box-shadow: 0 0 30px 15px #001b38;
+}
+.circle:after {
+  content: '';
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: -3;
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  display: block;
+  border: 1px solid #001b38;
+  box-shadow: 0 0 30px 15px #001b38 inset;
 }
 .uranus {
   position: absolute;
@@ -75,4 +76,4 @@
     left: 820px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=circle.css.map */
