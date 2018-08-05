@@ -11,6 +11,12 @@ addEventListener(`load`, function () {
             //Размещаем звезды с лева на право случайным образом. Область заполнения 100%
             stars[j].style.left = (Math.random() * 100) + "%";
             stars[j].style.top = (Math.random() * 100) + "%";
+            //создаем размер звезды произвольной велечены
+            let size = Math.random() * 4;
+            //Высота звезды
+            stars[j].style.height = size + "px";
+            //Ширина звезды
+            stars[j].style.width = size + "px";
 
         }
     }
