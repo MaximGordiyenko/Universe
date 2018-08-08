@@ -1,0 +1,17 @@
+.stars form label {
+  float: right;
+}
+.stars form label input {
+  display: flex;
+  width: 150px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.stars form label input::placeholder {
+  color: aliceblue;
+}
+.stars form label input:nth-child(3) {
+  width: 50px;
+}
+/*# sourceMappingURL=formRegistration.css.map */

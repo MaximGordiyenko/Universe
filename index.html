@@ -2,17 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/music/musicControl.css">
     <link rel="stylesheet" href="style/sky/night-map.css">
     <link rel="stylesheet" href="style/circle/circle.css">
     <link rel="stylesheet" href="style/cursor/cursor.css">
+    <link rel="stylesheet" href="style/form/formRegistration.css">
     <title>Game Menu</title>
 </head>
 <body>
-<!--<audio controls autoplay loop class="music">-->
-    <!--<source src="music/sky-view-sound.ogg" type="audio/ogg">-->
-    <!--Your browser does not support the audio element.-->
-<!--</audio>-->
-<div class="stars"></div>
+<div class="stars">
+    <form action="" method="post">
+        <label for="login">
+            <input type="text" name="username" id="login" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Submit">
+        </label>
+    </form>
+    <div>
+    <button onclick="plays(sound)">Play</button>
+    <button class="volumeUp" onclick="document.querySelector('.music').volume += 0.1">Vol+ </button>
+    <button class="volumeDown" onclick="document.querySelector('.music').volume -= 0.1">Vol- </button>
+</div>
+</div>
 <div class="circle"></div>
 <div class="cursor">
     <div class="fire">
@@ -26,5 +37,6 @@
 <div class="uranus"></div>
 <script src="js/cursor.js"></script>
 <script src="js/stars.js"></script>
+<script src="js/musicControl.js"></script>
 </body>
 </html>
