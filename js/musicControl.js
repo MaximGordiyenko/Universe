@@ -1,5 +1,5 @@
 //Create constructor new with audio file
-let sound = new Audio('music/sky-view-sound.ogg');
+// let sound = new Audio('music/sky-view-sound.ogg');
 //Load music when page open
 window.addEventListener(`load`, function () {
     //built-in function play()
