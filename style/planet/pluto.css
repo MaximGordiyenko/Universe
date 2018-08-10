@@ -1,0 +1,48 @@
+.pluto {
+  position: absolute;
+  top: calc(50% - -109px);
+  left: calc(50% - 200px);
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(60deg, #f09032, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(4 * 50%);
+  background-size: 300% 300%;
+  animation: change-gradient 10s ease alternate-reverse infinite;
+}
+@keyframes change-gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.pluto:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  display: block;
+  border: 1px solid #001b38;
+  box-shadow: 0 0 30px 15px #001b38;
+}
+.pluto:after {
+  content: '';
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: -3;
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 60px);
+  display: block;
+  border: 1px solid #1c6bbf;
+  box-shadow: 0 0 30px 15px #195798 inset;
+}
+/*# sourceMappingURL=pluto.css.map */

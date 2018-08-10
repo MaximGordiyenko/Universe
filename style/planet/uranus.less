@@ -1,0 +1,29 @@
+.uranus {
+    position: absolute;
+    top: calc(50% - 42px);
+    left: calc(50% - 260px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: -3;
+    background: linear-gradient(60deg, #691a07, #581869, #114367, #1d693c, #5073b8, #1098ad, #07b39b, #6fba82);
+    animation: uranus-move 45s ease-out alternate infinite;
+    @keyframes uranus-move {
+        0% {
+            top: 800px;
+            left: 5px;
+        }
+        30% {
+            top: 500px;
+            left: 200px;
+        }
+        60% {
+            top: 235px;
+            left: 520px;
+        }
+        100% {
+            top: 50px;
+            left: 820px;
+        }
+    }
+}

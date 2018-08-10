@@ -2,15 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style/music/musicControl.css">
+    <link rel="stylesheet" href="style/music/music.css">
     <link rel="stylesheet" href="style/sky/night-map.css">
-    <link rel="stylesheet" href="style/circle/circle.css">
+    <link rel="stylesheet" href="style/planet/saturn.css">
+    <link rel="stylesheet" href="style/planet/uranus.css">
+    <link rel="stylesheet" href="style/planet/pluto.css">
+    <link rel="stylesheet" href="style/planet/blackHole.css">
     <link rel="stylesheet" href="style/cursor/cursor.css">
     <link rel="stylesheet" href="style/form/formRegistration.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Game Menu</title>
 </head>
 <body>
 <div class="stars">
+    <div class="music-button">
+        <label>
+            <input class="saturn" onclick="plays(sound)" type="checkbox" value="1"><i class="fas fa-power-off"></i>
+        </label>
+    </div>
     <form action="" method="post">
         <label class="wrap">
             <input class="effect" type="text" placeholder="Username">
@@ -31,13 +41,23 @@
             </span>
         </label>
     </form>
-    <div>
-    <button onclick="plays(sound)">Play</button>
-    <button class="volumeUp" onclick="document.querySelector('.music').volume += 0.1">Vol+ </button>
-    <button class="volumeDown" onclick="document.querySelector('.music').volume -= 0.1">Vol- </button>
 </div>
+<div id="saturn">
+    <div class="planet bottom planet-bg"></div>
+    <div class="rings"></div>
+    <div class="planet top planet-bg"></div>
 </div>
-<div class="circle"></div>
+<div class="pluto"></div>
+<div class="blackHole">
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
+</div>
 <div class="cursor">
     <div class="fire">
         <div class="flame"></div>

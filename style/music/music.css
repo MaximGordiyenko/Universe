@@ -1,0 +1,24 @@
+.music-button {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  color: #6fba82;
+  background: transparent;
+  overflow: auto;
+  opacity: .5;
+  float: left;
+}
+.music-button:hover {
+  opacity: 1;
+}
+.music-button label {
+  float: left;
+}
+.music-button label input {
+  position: absolute;
+  top: -20px;
+}
+.music-button label input:checked + i {
+  color: #b6b5ab;
+}
+/*# sourceMappingURL=music.css.map */

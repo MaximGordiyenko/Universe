@@ -8,6 +8,7 @@
   border-left: 15px solid #004189;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
+  z-index: 10;
 }
 .cursor:after {
   content: "";

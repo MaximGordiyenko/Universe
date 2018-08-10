@@ -1,0 +1,34 @@
+#saturn {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  transform: rotateZ(-15deg);
+  z-index: 3;
+}
+#saturn .rings {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(53, 52, 51, 0) 34%, #383735 37%, #444342 38%, #383735 39%, #383735 41%, #574d4c 44%, #716e67 48%, #71625d 49%, #71625d 53%, #7a7369 55%, rgba(79, 76, 76, 0) 60%, #5a5559 63%, #4e494a 67%, rgba(78, 73, 74, 0) 68%, #4e494b 69%, #4e494b 70%, rgba(78, 73, 76, 0) 71%, rgba(77, 72, 76, 0) 72%, rgba(24, 19, 25, 0) 100%);
+  transform: rotateX(75deg);
+}
+#saturn .planet {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  border-radius: 50%;
+}
+#saturn .top {
+  clip: rect(0px, 180px, 90px, 0px);
+}
+#saturn .bottom {
+  clip: rect(90px, 180px, 180px, 0px);
+}
+#saturn .planet-bg {
+  background: linear-gradient(to top, #838175 0%, #838175 3%, #969082 5%, #969082 9%, #beb191 20%, #beb191 32%, #cab099 35%, #cab099 47%, #cdba9c 48%, #cdba9c 49%, #d3b89d 51%, #d3b89d 59%, #dabca2 61%, #dabca2 63%, #d0b49e 64%, #d0b49e 68%, #d5b58f 74%, #d5b58f 78%, #ddcb9d 83%, #ddcb9d 85%, #d4cbae 90%, #d4cbae 100%);
+}
+/*# sourceMappingURL=blackHole.css.map */
