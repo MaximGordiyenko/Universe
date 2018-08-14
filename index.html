@@ -21,26 +21,45 @@
             <input class="saturn" onclick="plays(sound)" type="checkbox" value="1"><i class="fas fa-power-off"></i>
         </label>
     </div>
-    <form action="" method="post">
-        <label class="wrap">
-            <input class="effect" type="text" placeholder="Username">
-            <span class="focus-border">
+    <div id="card">
+        <form class="front face" action="" method="post">
+            <label class="wrap">
+                <input class="effect" type="text" placeholder="Username">
+                <span class="focus-border">
             	<i></i>
             </span>
-        </label>
-        <label class="wrap">
-            <input class="effect" type="password" placeholder="Password">
-            <span class="focus-border">
+            </label>
+            <label class="wrap">
+                <input class="effect" type="password" placeholder="Password">
+                <span class="focus-border">
             	<i></i>
             </span>
-        </label>
-        <label class="wrap">
-            <input class="effect-submit" type="submit" value="Submit">
-            <span class="focus-border">
+            </label>
+            <label class="wrap">
+                <input class="effect-submit" type="submit" value="Submit">
+                <span class="focus-border">
             	<i></i>
             </span>
-        </label>
-    </form>
+            </label>
+        </form>
+        
+        <form class="back face" action="" method="post">
+            <label class="wrap">
+                <input class="effect" type="text" placeholder="Email">
+                <span class="focus-border">
+            	<i></i>
+            </span>
+            </label>
+            <label class="wrap">
+                <input class="effect-submit" type="submit" value="Recovery">
+                <span class="focus-border">
+            	<i></i>
+            </span>
+            </label>
+        </form>
+        <button id="flip_content">Recovery</button>
+    </div>
+    
 </div>
 <div id="saturn">
     <div class="planet bottom planet-bg"></div>
@@ -49,6 +68,10 @@
 </div>
 <div class="pluto"></div>
 <div class="blackHole">
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
+    <div class="miniPlanets"></div>
     <div class="miniPlanets"></div>
     <div class="miniPlanets"></div>
     <div class="miniPlanets"></div>
@@ -71,5 +94,6 @@
 <script src="js/cursor.js"></script>
 <script src="js/stars.js"></script>
 <script src="js/musicControl.js"></script>
+<script src="js/form.js"></script>
 </body>
 </html>
