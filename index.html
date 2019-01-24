@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/planet/blackHole.css">
     <link rel="stylesheet" href="style/cursor/cursor.css">
     <link rel="stylesheet" href="style/form/formRegistration.css">
+    <link href="style/social/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Game Menu</title>
@@ -21,45 +22,45 @@
             <input class="saturn" onclick="plays(sound)" type="checkbox" value="1"><i class="fas fa-power-off"></i>
         </label>
     </div>
-    <div id="card">
-        <form class="front face" action="" method="post">
-            <label class="wrap">
-                <input class="effect" type="text" placeholder="Username">
-                <span class="focus-border">
+</div>
+<div id="card">
+    <form action="" class="front face" method="post">
+        <label class="wrap">
+            <input class="effect" placeholder="Username" type="text">
+            <span class="focus-border">
             	<i></i>
             </span>
-            </label>
-            <label class="wrap">
-                <input class="effect" type="password" placeholder="Password">
-                <span class="focus-border">
+        </label>
+        <label class="wrap">
+            <input class="effect" placeholder="Password" type="password">
+            <span class="focus-border">
             	<i></i>
             </span>
-            </label>
-            <label class="wrap">
-                <input class="effect-submit" type="submit" value="Submit">
-                <span class="focus-border">
+        </label>
+        <label class="wrap">
+            <input class="effect-submit" type="submit" value="Submit">
+            <span class="focus-border">
             	<i></i>
             </span>
-            </label>
-        </form>
-        
-        <form class="back face" action="" method="post">
-            <label class="wrap">
-                <input class="effect" type="text" placeholder="Email">
-                <span class="focus-border">
-            	<i></i>
-            </span>
-            </label>
-            <label class="wrap">
-                <input class="effect-submit" type="submit" value="Recovery">
-                <span class="focus-border">
-            	<i></i>
-            </span>
-            </label>
-        </form>
-        <button id="flip_content">Recovery</button>
-    </div>
+        </label>
+    </form>
+    <button id="flip_front">Recovery</button>
     
+    <form action="" class="back face" method="post">
+        <label class="wrap">
+            <input class="effect" placeholder="Email" type="text">
+            <span class="focus-border">
+            	<i></i>
+            </span>
+        </label>
+        <label class="wrap">
+            <input class="effect-submit" type="submit" value="Recovery">
+            <span class="focus-border">
+            	<i></i>
+            </span>
+        </label>
+    </form>
+    <button id="flip_back">Back</button>
 </div>
 <div id="saturn">
     <div class="planet bottom planet-bg"></div>
@@ -95,5 +96,6 @@
 <script src="js/stars.js"></script>
 <script src="js/musicControl.js"></script>
 <script src="js/form.js"></script>
+<script src="js/social.js"></script>
 </body>
 </html>

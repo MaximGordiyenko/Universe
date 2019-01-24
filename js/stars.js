@@ -2,7 +2,7 @@
 addEventListener(`load`, function () {
     //Функция что создает звезды и делает их живыми
     function makeStars() {
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 500; i++) {
             //Создаем звезды путем увеличения количества div элементов c класом star
             document.querySelector('.stars').innerHTML += '<div class="star"></div>';
         }

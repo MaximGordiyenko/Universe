@@ -4,59 +4,74 @@
 .flip {
   transform: rotateY(180deg);
 }
-#flip_content {
-  position: absolute;
-  top: 5px;
-  left: -40px;
+#flip_front {
+  position: fixed;
+  top: 20px;
+  left: -70px;
   width: 60px;
   height: 20px;
   color: #727272;
   transform: rotate(-45deg);
-  background: transparent;
+  background: #06070b;
   letter-spacing: 3px;
   border: none;
   opacity: .7;
 }
-#flip_content:hover {
+#flip_front:hover {
   color: #3399FF;
-  opacity: 1;
 }
-.stars #card {
+#flip_back {
+  position: fixed;
+  top: 20px;
+  left: 150px;
+  width: 60px;
+  height: 20px;
+  color: #727272;
+  transform: rotate3d(-9, 20, 0, 180deg);
+  background: #06070b;
+  letter-spacing: 3px;
+  border: none;
+  opacity: .7;
+}
+#flip_back:hover {
+  color: #3399FF;
+}
+#card {
   float: right;
   margin-top: 3%;
   transform-style: preserve-3d;
   transition: all 1.0s linear;
 }
-.stars #card .face {
+#card .face {
   backface-visibility: hidden;
 }
-.stars #card .face.back {
+#card .face.back {
   position: absolute;
   top: 0;
   transform: rotateY(180deg);
 }
-.stars #card .face .wrap {
+#card .face .wrap {
   display: flex;
   width: 90%;
   margin: 10px 3%;
   position: relative;
 }
-.stars #card .face .wrap input[type="text"],
-.stars #card .face .wrap input[type="password"] {
+#card .face .wrap input[type="text"],
+#card .face .wrap input[type="password"] {
   font: 12px/14px "Lato", Arial, sans-serif;
   color: #333;
-  background: transparent;
+  background: #06070b;
   width: 100%;
   box-sizing: border-box;
   letter-spacing: 7px;
 }
-.stars #card .face .wrap .effect {
+#card .face .wrap .effect {
   border: 1px solid transparent;
   padding: 7px 14px 9px;
   transition: 0.4s;
 }
-.stars #card .face .wrap .effect ~ .focus-border:before,
-.stars #card .face .wrap .effect ~ .focus-border:after {
+#card .face .wrap .effect ~ .focus-border:before,
+#card .face .wrap .effect ~ .focus-border:after {
   content: "";
   position: absolute;
   top: 0;
@@ -67,15 +82,15 @@
   transition: 0.2s;
   transition-delay: 0.2s;
 }
-.stars #card .face .wrap .effect ~ .focus-border:after {
+#card .face .wrap .effect ~ .focus-border:after {
   top: auto;
   bottom: 0;
   right: auto;
   left: 0;
   transition-delay: 0.6s;
 }
-.stars #card .face .wrap .effect ~ .focus-border i:before,
-.stars #card .face .wrap .effect ~ .focus-border i:after {
+#card .face .wrap .effect ~ .focus-border i:before,
+#card .face .wrap .effect ~ .focus-border i:after {
   content: "";
   position: absolute;
   top: 0;
@@ -85,45 +100,45 @@
   background-color: #3399FF;
   transition: 0.2s;
 }
-.stars #card .face .wrap .effect ~ .focus-border i:after {
+#card .face .wrap .effect ~ .focus-border i:after {
   left: auto;
   right: 0;
   top: auto;
   bottom: 0;
   transition-delay: 0.4s;
 }
-.stars #card .face .wrap .effect:focus ~ .focus-border:before,
-.stars #card .face .wrap .effect:focus ~ .focus-border:after {
+#card .face .wrap .effect:focus ~ .focus-border:before,
+#card .face .wrap .effect:focus ~ .focus-border:after {
   width: 100%;
   transition: 0.2s;
   transition-delay: 0.6s;
 }
-.stars #card .face .wrap .effect:focus ~ .focus-border:after {
+#card .face .wrap .effect:focus ~ .focus-border:after {
   transition-delay: 0.2s;
 }
-.stars #card .face .wrap .effect:focus ~ .focus-border i:before,
-.stars #card .face .wrap .effect:focus ~ .focus-border i:after {
+#card .face .wrap .effect:focus ~ .focus-border i:before,
+#card .face .wrap .effect:focus ~ .focus-border i:after {
   height: 100%;
   transition: 0.2s;
 }
-.stars #card .face .wrap .effect:focus ~ .focus-border i:after {
+#card .face .wrap .effect:focus ~ .focus-border i:after {
   transition-delay: 0.4s;
 }
-.stars #card .face .wrap input[type="submit"] {
+#card .face .wrap input[type="submit"] {
   font: 12px/14px "Lato", Arial, sans-serif;
   color: #727272;
-  background: transparent;
+  background: #06070b;
   width: 100%;
   box-sizing: border-box;
   letter-spacing: 3px;
 }
-.stars #card .face .wrap .effect-submit {
+#card .face .wrap .effect-submit {
   border: 1px solid transparent;
   padding: 7px 14px 9px;
   transition: 0.4s;
 }
-.stars #card .face .wrap .effect-submit ~ .focus-border:before,
-.stars #card .face .wrap .effect-submit ~ .focus-border:after {
+#card .face .wrap .effect-submit ~ .focus-border:before,
+#card .face .wrap .effect-submit ~ .focus-border:after {
   content: "";
   position: absolute;
   top: 0;
@@ -134,15 +149,15 @@
   transition: 0.2s;
   transition-delay: 0.2s;
 }
-.stars #card .face .wrap .effect-submit ~ .focus-border:after {
+#card .face .wrap .effect-submit ~ .focus-border:after {
   top: auto;
   bottom: 0;
   right: auto;
   left: 0;
   transition-delay: 0.6s;
 }
-.stars #card .face .wrap .effect-submit ~ .focus-border i:before,
-.stars #card .face .wrap .effect-submit ~ .focus-border i:after {
+#card .face .wrap .effect-submit ~ .focus-border i:before,
+#card .face .wrap .effect-submit ~ .focus-border i:after {
   content: "";
   position: absolute;
   top: 0;
@@ -152,28 +167,28 @@
   background-color: #3399FF;
   transition: 0.2s;
 }
-.stars #card .face .wrap .effect-submit ~ .focus-border i:after {
+#card .face .wrap .effect-submit ~ .focus-border i:after {
   left: auto;
   right: 0;
   top: auto;
   bottom: 0;
   transition-delay: 0.4s;
 }
-.stars #card .face .wrap .effect-submit:hover ~ .focus-border:before,
-.stars #card .face .wrap .effect-submit:hover ~ .focus-border:after {
+#card .face .wrap .effect-submit:hover ~ .focus-border:before,
+#card .face .wrap .effect-submit:hover ~ .focus-border:after {
   width: 100%;
   transition: 0.2s;
   transition-delay: 0.1s;
 }
-.stars #card .face .wrap .effect-submit:hover ~ .focus-border:after {
+#card .face .wrap .effect-submit:hover ~ .focus-border:after {
   transition-delay: 0.1s;
 }
-.stars #card .face .wrap .effect-submit:hover ~ .focus-border i:before,
-.stars #card .face .wrap .effect-submit:hover ~ .focus-border i:after {
+#card .face .wrap .effect-submit:hover ~ .focus-border i:before,
+#card .face .wrap .effect-submit:hover ~ .focus-border i:after {
   height: 100%;
   transition: 0.2s;
 }
-.stars #card .face .wrap .effect-submit:hover ~ .focus-border i:after {
+#card .face .wrap .effect-submit:hover ~ .focus-border i:after {
   transition-delay: 0.1s;
 }
 /*# sourceMappingURL=formRegistration.css.map */
