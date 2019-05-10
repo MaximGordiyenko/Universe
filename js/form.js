@@ -1,5 +1,5 @@
 let btn = document.querySelector('#flip_content');
 let content = document.querySelector('#card');
-btn.onclick = function() {
-    content.classList.toggle('flip');
-};
+btn.addEventListener('click', () => {
+  content.classList.toggle('flip');
+});
